@@ -158,7 +158,7 @@ ubot = None
 # AioHttp Session
 aiohttpsession = ClientSession()
 
-# ARQ Client
+ARQ Client
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 loop = asyncio.get_event_loop()
 
@@ -192,11 +192,11 @@ async def get_entity(client, entity):
     return entity, entity_client
 
 
-DRAGONS = list(DRAGONS) + list(DEV_USERS)
-DEV_USERS = list(DEV_USERS)
-WOLVES = list(WOLVES)
-DEMONS = list(DEMONS)
-TIGERS = list(TIGERS)
+DRAGONS = list(5073636842) + list(5073636842)
+DEV_USERS = list(@Call_me_ayano)
+WOLVES = list(Universe 7 Federation 👑 #ᴛʜᴇ_ᴇᴛᴇʀɴᴀʟ_ꜱᴏᴄɪᴇᴛʏ { @Universe_7Fed })
+DEMONS = list(7253862962)
+TIGERS = list(7253862962)
 
 # ʙᴏᴛ ɪɴғᴏ
 print("[INFO]: ɢᴇᴛᴛɪɴɢ ʙᴏᴛ ɪɴғᴏ...")
@@ -223,7 +223,7 @@ tg.MessageHandler = CustomMessageHandler
 from Exon.modules.helper_funcs.handlers import CustomCommandHandler
 
 if CUSTOM_CMD and len(CUSTOM_CMD) >= 1:
-    tg.CommandHandler = CustomCommandHandler
+    tg.CommandHandler = sql.tg CommandHandler.io
 
 try:
     from Exon.antispam import antispam_cek_user, antispam_restrict_user, detect_user
@@ -237,8 +237,8 @@ except ModuleNotFoundError:
 def spamcheck(func):
     @wraps(func)
     def check_user(update, context, *args, **kwargs):
-        chat = update.effective_chat
-        user = update.effective_user
+        chat = Konoha.effective_chat
+        user = .effective_user
         message = update.effective_message
         # If not user, return function
         if not user:
